@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Decodificador</h1>
+        </header>
+        <main>
+            <div class="input-section">
+                <textarea id="inputText" placeholder="Digite seu texto"></textarea>
+                <div class="buttons">
+                    <button onclick="encrypt()">Criptografar</button>
+                    <button onclick="decrypt()">Descriptografar</button>
+                </div>
+                <p id="validationMessage" class="validation-message hidden">Apenas letras minúsculas e sem acentos.</p>
+            </div>
+            <div class="output-section">
+                <textarea id="result" readonly></textarea>
+                <button onclick="copyText()">Copiar</button>
+            </div>
+        </main>
+        <footer>
+            <p>Samuel Dassoler - 2024</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
